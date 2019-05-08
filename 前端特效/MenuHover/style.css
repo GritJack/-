@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+.menu{
+    margin: 200px;
+    padding: 0;
+
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+.menu li a {
+    float: right;
+    text-decoration: none;
+    position: relative;
+    color: #313131;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: 0.7s all;
+    display: block;
+    overflow: hidden;
+    padding: 14px 30px;
+    text-transform: uppercase;
+
+}
+.menu li a:before{
+    content: '';
+    width: 60px;
+    position: absolute;
+    border-bottom: 8px solid #313131;
+    bottom: 0;
+    right:350px;
+    transition: 0.7s all;
+
+
+}
+.menu li a:hover:before{
+
+    right: 0;
+}
